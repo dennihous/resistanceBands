@@ -3,6 +3,7 @@ import * as ReactDOMClient from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TopBar from './features/TopBar';
 import ResistanceBandList from './features/ResistanceBandList';
+import YoutubeVideo from './features/YoutubeVideo';
 
 const bands = [
   { name: 'Band 1', imageUrl: '/images/BlackBand.png' },
@@ -11,11 +12,14 @@ const bands = [
   { name: 'Band 2', imageUrl: '/images/BlueBand.png' },
 ];
 
+const videoId = '_rdC4T95e88&ab_channel=Dr.NateFeehrer%2CPhysicalTherapist'
+
 const App = () => {
   return (
     <div>
       <TopBar />
       <ResistanceBandList bands={bands} />
+      <YoutubeVideo videoId={videoId} />
     </div>
   );
 };

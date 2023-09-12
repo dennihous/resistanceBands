@@ -14,8 +14,6 @@ export default function TopBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/" className="title-components">Home</Nav.Link>
-            <Nav.Link href="/Bands" className="title-components">Bands</Nav.Link>
             <NavDropdown title="Select by weight" id="basic-nav-dropdown" className="title-components">
               <NavDropdown.Item href="/20Kg">
                 20Kg
