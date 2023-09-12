@@ -12,14 +12,12 @@ const bands = [
   { name: 'Band 2', imageUrl: '/images/BlueBand.png' },
 ];
 
-const videoId = '_rdC4T95e88&ab_channel=Dr.NateFeehrer%2CPhysicalTherapist'
-
 const App = () => {
   return (
     <div>
       <TopBar />
       <ResistanceBandList bands={bands} />
-      <YoutubeVideo videoId={videoId} />
+      <YoutubeVideo />
     </div>
   );
 };

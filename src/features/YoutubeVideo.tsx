@@ -1,15 +1,11 @@
 import React from 'react';
-import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player/youtube'
 import './YoutubeVideo.scss'
 
-type YoutubeVideoProps = {
-  videoId: string;
-}
-
-export default function YoutubeVideo({ videoId }: YoutubeVideoProps) {
+export default function YouTubeVideo() {
   return (
-    <div className="youtube-video">
-      <YouTube videoId={videoId} />
+    <div>
+      <ReactPlayer className='youtube-video' url='https://www.youtube.com/watch?v=_rdC4T95e88&ab_channel=Dr.NateFeehrer%2CPhysicalTherapist' />
     </div>
-  )
-}
+  );
+};
