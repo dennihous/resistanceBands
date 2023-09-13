@@ -15,9 +15,9 @@ export default function TopBar() {
         <Container className="centered-topbar">
           <Navbar.Brand href="/home" className="resistance-band-title">
             <Image
-              src="/images/Icon.jpeg" // Replace with the actual path to your image
-              alt="Logo" // Provide an alt text for accessibility
-              className="resistance-band-logo-image" // Apply any styling class you need
+              src="/images/Icon-removed-background.png"
+              alt="Logo"
+              className="resistance-band-logo-image"
             />
             Resistance Bands
           </Navbar.Brand>
