@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 import './Band1.scss'
 
 export default function Band1() {
@@ -15,8 +16,8 @@ export default function Band1() {
           </p>
         </div>
       </div>
-      <div className="add-to-cart">
-        <button>Add to Cart</button>
+      <div className="add-to-cart-button">
+        <Button>Add to Cart</Button>
       </div>
     </div>
   );

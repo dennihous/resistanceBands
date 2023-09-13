@@ -19,9 +19,6 @@ export default function ResistanceBand({ name, imageUrl, price }: ResistanceBand
         <p>£{price}</p>
       </div>
       <Button className='add-to-cart-button'>Add to Cart</Button>
-      {/* <Button variant="outline-primary" className="resistance-band-button">
-      </Button> */}
-
     </div>
   )
 }

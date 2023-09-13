@@ -1,7 +1,7 @@
 .resistance-band-list-container {
   display: flex;
-  justify-content: space-between; /* Spread items evenly */
-  flex-wrap: wrap; /* Wrap items to the next line if they overflow */
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .resistance-band-item {

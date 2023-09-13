@@ -25,17 +25,23 @@ export default function TopBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavDropdown title="Select by weight" id="basic-nav-dropdown" className="title-components">
-                <NavDropdown.Item href="/20Kg">
+                <NavDropdown.Item href="/Bands">
                   20Kg
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/40Kg">
+                <NavDropdown.Item href="/Bands">
                   40Kg
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/60Kg">
+                <NavDropdown.Item href="/Bands">
                   60Kg
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/80Kg">
+                <NavDropdown.Item href="/Bands">
                   80Kg
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/Bands">
+                  100Kg
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/Bands">
+                  Band Collection
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/How-To-Use">
