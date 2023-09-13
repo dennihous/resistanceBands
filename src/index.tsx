@@ -5,10 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './features/Home';
-import TopBar from './features/TopBar';
-import Test from './features/Test';
-import ErrorPage from './error-page';
+import Home from './pages/Home';
+import TopBar from './features/TopBar/TopBar';
+import Band1 from './features/Band1';
+import ErrorPage from './pages/error-page';
 import './index.scss'
 
 const router = createBrowserRouter([
@@ -18,12 +18,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "home",
+        path: "/",
         element: <Home />
       },
       {
-        path: "test",
-        element: <Test />
+        path: "band1",
+        element: <Band1 />
       },
     ]
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import ResistanceBand from './ResistanceBand';
+import ResistanceBand from './ResistanceBand/ResistanceBand';
 
 type ResistanceBandListProps = {
   bands: any

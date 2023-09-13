@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Image from 'react-bootstrap/Image';
 
 import './TopBar.scss';
 
@@ -12,7 +13,14 @@ export default function TopBar() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container className="centered-topbar">
-          <Navbar.Brand href="/home" className="resistance-band-title">Resistance Bands</Navbar.Brand>
+          <Navbar.Brand href="/home" className="resistance-band-title">
+            <Image
+              src="/images/Icon.jpeg" // Replace with the actual path to your image
+              alt="Logo" // Provide an alt text for accessibility
+              className="resistance-band-logo-image" // Apply any styling class you need
+            />
+            Resistance Bands
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

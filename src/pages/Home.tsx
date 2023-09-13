@@ -1,6 +1,6 @@
 import React from 'react';
-import ResistanceBandList from './ResistanceBandList';
-import YoutubeVideo from './YoutubeVideo';
+import ResistanceBandList from '../features/ResistanceBandList';
+import YoutubeVideo from '../features/YoutubeVideo/YoutubeVideo';
 
 const bands = [
   { name: 'Band 1', imageUrl: '/images/BlackBand.png' },
