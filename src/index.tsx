@@ -1,27 +1,37 @@
-import React from 'react';
-import * as ReactDOMClient from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './features/Home';
 import TopBar from './features/TopBar';
-import ResistanceBandList from './features/ResistanceBandList';
-import YoutubeVideo from './features/YoutubeVideo';
+import Test from './features/Test';
+import ErrorPage from './error-page';
+import './index.scss'
 
-const bands = [
-  { name: 'Band 1', imageUrl: '/images/BlackBand.png' },
-  { name: 'Band 4', imageUrl: '/images/PurpleBand.png' },
-  { name: 'Band 3', imageUrl: '/images/GreenBand.png' },
-  { name: 'Band 2', imageUrl: '/images/BlueBand.png' },
-];
-
-const App = () => {
-  return (
-    <div>
-      <TopBar />
-      <ResistanceBandList bands={bands} />
-      <YoutubeVideo />
-    </div>
-  );
-};
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <TopBar />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "home",
+        element: <Home />
+      },
+      {
+        path: "test",
+        element: <Test />
+      },
+    ]
+  }
+])
 
 const container = document.getElementById('root');
-const root = ReactDOMClient.createRoot(container as Element);
-root.render(<App />);
+ReactDOM.createRoot(container as Element).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>,
+)

@@ -6,10 +6,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
+  },
+  devServer: {
+    historyApiFallback: true
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.css'],
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
