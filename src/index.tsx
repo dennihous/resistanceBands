@@ -7,7 +7,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import TopBar from './features/TopBar/TopBar';
-import Band1 from './features/Band1';
+import BuyBand from './pages/BuyBand';
 import ErrorPage from './pages/error-page';
 import './index.scss'
 
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "band1",
-        element: <Band1 />
+        path: "/Bands",
+        element: <BuyBand />
       },
     ]
   }

@@ -1,10 +1,93 @@
+.resistance-band-list-container {
+  display: flex;
+  justify-content: space-between; /* Spread items evenly */
+  flex-wrap: wrap; /* Wrap items to the next line if they overflow */
+}
+
+.resistance-band-item {
+  margin-top: 50px;
+  padding: 3%;
+  box-sizing: border-box;
+}
+
 .resistance-band-image {
-  width: 250px;
+  width: 200px;
   height: auto;
 }
 
-.resistance-band-button {
-  margin-top: 150px;
-  margin-right: 40px;
-  margin-left: 40px;
+@media (min-width: 630px) {
+  .resistance-band-image {
+    width: 250px;
+  }
+}
+
+@media (min-width: 745px) {
+  .resistance-band-image {
+    width: 300px;
+  }
+}
+
+@media (min-width: 890px) {
+  .resistance-band-image {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1090px) {
+  .resistance-band-image {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .resistance-band-image {
+    width: 310px;
+  }
+}
+
+@media (min-width: 1630px) {
+  .resistance-band-image {
+    width: 172px;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product .description {
+  text-align: center;
+}
+
+.product img:hover {
+  border: 1px;
+}
+
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  border: 1px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  color: black;
+}
+
+.add-to-cart-button:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
 }

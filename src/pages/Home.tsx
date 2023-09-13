@@ -1,12 +1,14 @@
 import React from 'react';
-import ResistanceBandList from '../features/ResistanceBandList';
+import ResistanceBandList from '../features/ResistanceBand/ResistanceBandList';
 import YoutubeVideo from '../features/YoutubeVideo/YoutubeVideo';
 
 const bands = [
-  { name: 'Band 1', imageUrl: '/images/BlackBand.png' },
-  { name: 'Band 4', imageUrl: '/images/PurpleBand.png' },
-  { name: 'Band 3', imageUrl: '/images/GreenBand.png' },
-  { name: 'Band 2', imageUrl: '/images/BlueBand.png' },
+  { name: '20Kg Band', imageUrl: '/images/BlackBand.png', price: '5.99' },
+  { name: '40Kg Band', imageUrl: '/images/PurpleBand.png', price: '5.99' },
+  { name: '60Kg Band', imageUrl: '/images/GreenBand.png', price: '5.99' },
+  { name: '80Kg Band', imageUrl: '/images/BlueBand.png', price: '5.99' },
+  { name: '80Kg Band', imageUrl: '/images/RedBand.png', price: '5.99' },
+  { name: '80Kg Band', imageUrl: '/images/CollectionBands.png', price: '23.99' },
 ];
 
 export default function Home() {

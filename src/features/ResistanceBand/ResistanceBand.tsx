@@ -5,12 +5,23 @@ import './ResistanceBand.scss';
 type ResistanceBandProps = {
   name: string;
   imageUrl: string;
+  price: string
 }
 
-export default function ResistanceBand({ name, imageUrl }: ResistanceBandProps) {
+export default function ResistanceBand({ name, imageUrl, price }: ResistanceBandProps) {
   return (
-    <Button variant="outline-primary" className="resistance-band-button">
+    <div className='product'>
       <img src={imageUrl} alt={name} className="resistance-band-image" />
-    </Button>
+      <div className="description">
+        <p>
+          <b>{name}</b>
+        </p>
+        <p>£{price}</p>
+      </div>
+      <Button className='add-to-cart-button'>Add to Cart</Button>
+      {/* <Button variant="outline-primary" className="resistance-band-button">
+      </Button> */}
+
+    </div>
   )
 }

@@ -13,7 +13,7 @@ export default function TopBar() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container className="centered-topbar">
-          <Navbar.Brand href="/home" className="resistance-band-title">
+          <Navbar.Brand href="/" className="resistance-band-title">
             <Image
               src="/images/Icon-removed-background.png"
               alt="Logo"
