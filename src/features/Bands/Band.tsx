@@ -1,16 +1,20 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import './Band1.scss'
+import './Band.scss'
+import bandsData from '../../../bandsData.json'
+import { useParams } from 'react-router-dom';
 
-export default function Band1() {
+export default function Band() {
+  const { bandId } = useParams();
+  const index = Number(bandId) -1
   return (
     <div className="band-page">
       <div className="band-details">
-        <img src={'/images/BlackBand.png'} alt="Resistance Band" className="resistance-band-image-page" />
+        <img src={bandsData.bands[index].imageUrl} alt="Resistance Band" className="resistance-band-image-page" />
         <div className="details">
-          <h2>20Kg Resistance Band</h2>
+          <h2>{bandsData.bands[index].name}</h2>
           <p>
-            Write some details about the resistance band here.
+            Write some details about the {bandsData.bands[index].name} here.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Nulla ac justo vel urna cursus dictum in ac ex.
           </p>

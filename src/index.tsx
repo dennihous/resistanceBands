@@ -7,7 +7,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import TopBar from './features/TopBar/TopBar';
-import BuyBand from './pages/BuyBand';
+import Band from './features/Bands/Band';
 import ErrorPage from './pages/error-page';
 import './index.scss'
 
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/bands/:bandId",
-        element: <BuyBand />
+        element: <Band />
       },
     ]
   }

@@ -55,11 +55,11 @@
 
 @media (min-width: 1260px) {
   .resistance-band-image {
-    width: 320px;
+    width: 325px;
   }
 }
 
-@media (min-width: 1795px) {
+@media (min-width: 1824px) {
   .resistance-band-image {
     width: 172px;
   }
@@ -86,12 +86,12 @@
   border: 2px solid rgb(19, 19, 19);
   min-width: 100px;
   padding: 5px 15px;
-  border-radius: 15px;
   color: black;
-}
+  border-radius: 15px;}
 
 .add-to-cart-button:hover {
   background-color: rgb(19, 19, 19);
   color: white;
   cursor: pointer;
+  border: 2px solid rgb(19, 19, 19);
 }
