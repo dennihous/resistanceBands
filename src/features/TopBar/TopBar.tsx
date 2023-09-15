@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -26,26 +26,26 @@ export default function TopBar() {
             <Nav className="me-auto">
               <NavDropdown title="Select by weight" id="basic-nav-dropdown" className="title-components">
                 <NavDropdown.Item href="/Bands">
-                  20Kg
+                  <Link to={`bands/1`}>20Kg</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Bands">
-                  40Kg
+                  <Link to={`bands/2`}>40Kg</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Bands">
-                  60Kg
+                  <Link to={`bands/3`}>60Kg</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Bands">
-                  80Kg
+                  <Link to={`bands/4`}>80Kg</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Bands">
-                  100Kg
+                  <Link to={`bands/5`}>100Kg</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Bands">
-                  Band Collection
+                  <Link to={`bands/6`}>Band Collection</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/How-To-Use">
-                  How to use
+                  <Link to={`how-to-use`}>How to Use</Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/Contact" className="title-components">Contact</Nav.Link>

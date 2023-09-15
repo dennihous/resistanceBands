@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/Bands",
+        path: "/bands/:bandId",
         element: <BuyBand />
       },
     ]
