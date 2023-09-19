@@ -11,6 +11,7 @@ export default function ResistanceBandList({ bands }: ResistanceBandListProps) {
         {bands.bands.map((band: any, index: number) => (
           <div key={index} className="resistance-band-item">
             <ResistanceBand
+              id={band.id}
               name={band.name}
               imageUrl={band.imageUrl}
               price={band.price}
