@@ -6,9 +6,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'react-bootstrap/Image';
 
-import './TopBar.scss';
+import './NavBar.scss';
 
-export default function TopBar() {
+export default function NavBar() {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -43,12 +43,12 @@ export default function TopBar() {
                 <NavDropdown.Item href="/Bands">
                   <Link to={`bands/6`}>Band Collection</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
+                {/* <NavDropdown.Divider />
                 <NavDropdown.Item href="/How-To-Use">
                   <Link to={`how-to-use`}>How to Use</Link>
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
-              <Nav.Link href="/Contact" className="title-components">Contact</Nav.Link>
+              <Nav.Link href="/basket" className="title-components">Basket</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

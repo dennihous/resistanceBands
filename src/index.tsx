@@ -6,15 +6,16 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
-import TopBar from './features/TopBar/TopBar';
+import NavBar from './features/NavBar/NavBar';
 import Band from './features/Bands/Band';
 import ErrorPage from './pages/error-page';
+import { Basket } from './features/Basket/Basket';
 import './index.scss'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <TopBar />,
+    element: <NavBar />,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/bands/:bandId",
         element: <Band />
+      },
+      {
+        path: "/basket",
+        element: <Basket />
       },
     ]
   }
