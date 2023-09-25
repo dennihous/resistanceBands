@@ -25,26 +25,26 @@ export default function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavDropdown title="Select by weight" id="basic-nav-dropdown" className="title-components">
-                <NavDropdown.Item href="/Bands">
+                <NavDropdown.Item>
                   <Link to={`bands/1`}>20Kg</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Bands">
+                <NavDropdown.Item>
                   <Link to={`bands/2`}>40Kg</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Bands">
+                <NavDropdown.Item>
                   <Link to={`bands/3`}>60Kg</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Bands">
+                <NavDropdown.Item>
                   <Link to={`bands/4`}>80Kg</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Bands">
+                <NavDropdown.Item>
                   <Link to={`bands/5`}>100Kg</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Bands">
-                  <Link to={`bands/6`}>Band Collection</Link>
+                <NavDropdown.Item>
+                  <Nav.Link href="/" className="title-components">Band Collection</Nav.Link>
                 </NavDropdown.Item>
                 {/* <NavDropdown.Divider />
-                <NavDropdown.Item href="/How-To-Use">
+                <NavDropdown.Item>
                   <Link to={`how-to-use`}>How to Use</Link>
                 </NavDropdown.Item> */}
               </NavDropdown>
