@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import './Band.scss'
 import bandsData from '../../../bandsData.json'
 import { useLoaderData } from 'react-router-dom';
-import getBands from '../../bandFunctions';
+import { getBands } from '../../bandFunctions';
 
 export async function loader({ params }: any) {
   const selectedBand = await getBands(params.bandId);
@@ -11,7 +11,7 @@ export async function loader({ params }: any) {
 }
 
 export default function Band() {
-  const { selectedBand } = useLoaderData();
+  const { selectedBand }: any = useLoaderData();
   const index = Number(selectedBand) -1
   return (
     <div className="band-page">

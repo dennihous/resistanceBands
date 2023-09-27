@@ -11,6 +11,9 @@ import Band from './features/Bands/Band';
 import ErrorPage from './pages/error-page';
 import { Basket } from './features/Basket/Basket';
 import './index.scss'
+import getBands from './bandFunctions'
+
+getBands()
 
 const router = createBrowserRouter([
   {
