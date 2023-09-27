@@ -10,7 +10,7 @@ import NavBar from './features/NavBar/NavBar';
 import Band from './features/Bands/Band';
 import ErrorPage from './pages/error-page';
 import { Basket } from './features/Basket/Basket';
-import './index.scss'
+import './index.scss';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/bands/:bandId",
-        element: <Band />
+        element: <Band />,
       },
       {
         path: "/basket",

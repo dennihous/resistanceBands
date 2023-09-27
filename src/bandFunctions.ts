@@ -1,11 +1,7 @@
-import localforage from "localforage";
-import { matchSorter } from "match-sorter";
+import bandsData from "../bandsData.json";
 
-export async function getBands(query: any) {
-  let bands = await localforage.getItem("bands");
-  if (!bands) bands = [];
-  if (query) {
-    bands = matchSorter(bands, query, { keys: ["id"] });
-  }
-  return bands;
+export async function getBand(id: number) {
+  const bands: any = bandsData.bands;
+  const band: any = await bands.find((band: any) => band.id === id);
+  return band ?? null;
 }
