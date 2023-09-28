@@ -4,7 +4,7 @@ import './Band.scss'
 import bandsData from '../../../bandsData.json'
 import { useLoaderData } from 'react-router-dom';
 
-export async function loader({ params }: any) {
+export function loader({ params }: any) {
   const band = params.bandId
   return { band }
 }
