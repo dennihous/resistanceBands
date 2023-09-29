@@ -1,5 +1,4 @@
 import React from 'react';
-import './BandPage.scss'
 import { useLoaderData } from 'react-router-dom';
 import Band from '../features/Bands/Band';
 
