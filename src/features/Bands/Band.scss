@@ -1,41 +1,35 @@
 .band-page {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-.band-details {
+.left-column {
+  width: 40%;
+  padding-right: 20px;
+  max-width: 600px;
+}
+
+.right-column {
   flex: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: right;
+  align-items: center;
   text-align: center;
-}
-
-.title-container {
-  display: flex;
-  justify-content: right; 
-  align-items: center; 
-  height: 100%;
+  max-width: 600px;
 }
 
 .resistance-band-image-page {
-  width: 60%;
+  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .details {
   font-size: 18px;
   margin-top: 20px;
-}
-
-.add-to-cart {
-  flex: 1;
-  padding: 20px;
-  justify-content: center;
-  align-items: center; 
 }
 
 .add-to-cart-button {

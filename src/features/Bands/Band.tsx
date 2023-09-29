@@ -6,7 +6,6 @@ import bandsData from '../../../bandsData.json'
 export default function Band({index}: any) {
   return (
     <div className="band-page">
-      <div className="band-details">
       <div className="left-column">
         <img
           src={bandsData.bands[index].imageUrl}
@@ -27,7 +26,6 @@ export default function Band({index}: any) {
           <Button>Add to Cart</Button>
         </div>
       </div>  
-      </div>
     </div>
   );
 }
