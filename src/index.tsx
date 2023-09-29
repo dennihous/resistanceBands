@@ -8,9 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import NavBar from './features/NavBar/NavBar';
 import ErrorPage from './pages/error-page';
-import { Basket } from './features/Basket/Basket';
 import './index.scss';
 import BandPage, { loader as bandPageLoader} from './pages/BandPage';
+import CartPage from './pages/CartPage';
 
 const router = createBrowserRouter([
   {
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
         loader: bandPageLoader,
       },
       {
-        path: "/basket",
-        element: <Basket />
+        path: "/cart",
+        element: <CartPage />
       },
     ]
   }

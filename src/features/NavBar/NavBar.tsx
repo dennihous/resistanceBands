@@ -48,7 +48,7 @@ export default function NavBar() {
                   <Link to={`how-to-use`}>How to Use</Link>
                 </NavDropdown.Item> */}
               </NavDropdown>
-              <Nav.Link href="/basket" className="title-components">Basket</Nav.Link>
+              <Nav.Link href="/cart" className="title-components">Cart</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
