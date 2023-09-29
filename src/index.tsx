@@ -7,10 +7,10 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import NavBar from './features/NavBar/NavBar';
-import Band, { loader as bandLoader } from './features/Bands/Band';
 import ErrorPage from './pages/error-page';
 import { Basket } from './features/Basket/Basket';
 import './index.scss';
+import BandPage, { loader as bandPageLoader} from './pages/BandPage';
 
 const router = createBrowserRouter([
   {
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/bands/:bandId",
-        element: <Band />,
-        loader: bandLoader,
+        element: <BandPage />,
+        loader: bandPageLoader,
       },
       {
         path: "/basket",

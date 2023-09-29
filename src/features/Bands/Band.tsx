@@ -2,16 +2,8 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import './Band.scss'
 import bandsData from '../../../bandsData.json'
-import { useLoaderData } from 'react-router-dom';
 
-export function loader({ params }: any) {
-  const band = params.bandId;
-  return { band }
-}
-
-export default function Band() {
-  const { band }: any = useLoaderData();
-  const index = Number(band) -1
+export default function Band({index}: any) {
   return (
     <div className="band-page">
       <div className="band-details">
