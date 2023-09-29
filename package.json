@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -42,8 +44,11 @@
     "webpack-dev-server": "^4.15.1"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.3",
     "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1",
     "sass-loader": "^13.3.2",
+    "standard": "^17.1.0",
     "webpack": "^5.88.2"
   }
 }

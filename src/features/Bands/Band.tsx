@@ -5,7 +5,7 @@ import bandsData from '../../../bandsData.json'
 import { useLoaderData } from 'react-router-dom';
 
 export function loader({ params }: any) {
-  const band = params.bandId
+  const band = params.bandId;
   return { band }
 }
 
