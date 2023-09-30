@@ -43,10 +43,6 @@ export default function NavBar() {
                 <NavDropdown.Item>
                   <Nav.Link href="/" className="title-components">Band Collection</Nav.Link>
                 </NavDropdown.Item>
-                {/* <NavDropdown.Divider />
-                <NavDropdown.Item>
-                  <Link to={`how-to-use`}>How to Use</Link>
-                </NavDropdown.Item> */}
               </NavDropdown>
               <Nav.Link href="/cart" className="title-components">Cart</Nav.Link>
             </Nav>
