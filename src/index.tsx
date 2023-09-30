@@ -11,6 +11,7 @@ import ErrorPage from './pages/error-page';
 import './index.scss';
 import BandPage, { loader as bandPageLoader} from './pages/BandPage';
 import CartPage from './pages/CartPage';
+import { ShopContextProvider } from './features/context/ShopContext';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,8 @@ const router = createBrowserRouter([
 const container = document.getElementById('root');
 ReactDOM.createRoot(container as Element).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ShopContextProvider>
+      <RouterProvider router={router} />
+    </ShopContextProvider>
   </React.StrictMode>,
 )

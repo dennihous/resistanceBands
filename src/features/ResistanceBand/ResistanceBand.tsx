@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import './ResistanceBand.scss';
 import { Link } from 'react-router-dom'
+import { ShopContext } from '../context/ShopContext';
 
 type ResistanceBandProps = {
   id: number;
@@ -11,6 +12,9 @@ type ResistanceBandProps = {
 }
 
 export default function ResistanceBand({ name, imageUrl, price, id }: ResistanceBandProps) {
+  const { addToCart, cartItems } = useContext(ShopContext);
+  const cartItemAmount = cartItems[id];
+
   return (
     <div className='product'>
       <Link to={`bands/${id}`}>
@@ -22,7 +26,8 @@ export default function ResistanceBand({ name, imageUrl, price, id }: Resistance
           <p>£{price}</p>
         </div>
       </Link>
-      <Button className='add-to-cart-button'>Add to Cart</Button>
+      <Button className='add-to-cart-button' onClick={() => addToCart(id)}>
+        Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}</Button>
     </div>
   )
 }
