@@ -43,6 +43,7 @@ export const ShopContextProvider = (props: any) => {
     setCartItems((prev: any) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
 
+  console.log(cartItems)
   const removeFromCart = (itemId: number) => {
     setCartItems((prev: any) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };

@@ -14,7 +14,6 @@ type ResistanceBandProps = {
 export default function ResistanceBand({ name, imageUrl, price, id }: ResistanceBandProps) {
   const { addToCart, cartItems }: any = useContext(ShopContext);
   const cartItemAmount = cartItems[id];
-
   return (
     <div className='product'>
       <Link to={`bands/${id}`}>

@@ -5,7 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'react-bootstrap/Image';
-
 import './NavBar.scss';
 
 export default function NavBar() {
@@ -41,7 +40,7 @@ export default function NavBar() {
                   <Link to={`bands/5`}>100Kg</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Nav.Link href="/" className="title-components">Band Collection</Nav.Link>
+                  <Nav.Link href="/bands/6" className="title-components">Band Collection</Nav.Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/cart" className="title-components">Cart</Nav.Link>
@@ -53,3 +52,22 @@ export default function NavBar() {
     </>
   );
 }
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import { ShoppingCart } from "phosphor-react";
+// import "./navbar.css";
+
+// export default function Navbar() {
+//   return (
+//     <div className="navbar">
+//       <div className="links">
+//         <Link to="/"> Shop </Link>
+//         <Link to="/contact"> Contact </Link>
+//         <Link to="/cart">
+//           <ShoppingCart size={32} />
+//         </Link>
+//       </div>
+//     </div>
+//   );
+// };
