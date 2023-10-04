@@ -12,9 +12,9 @@ export default function Cart() {
       </div>
       <div className="cartItems">
         {bandData.bands.map((band) => {
-          // if (cartItems[band.id] !== 0) {
+          if (cartItems[band.id] !== 0) {
             return <CartItem band={band} />
-          // }
+          }
         })}
       </div>
     </div>
