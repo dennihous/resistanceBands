@@ -8,7 +8,7 @@ import './index.scss';
 import BandPage, { loader as bandPageLoader} from './pages/BandPage';
 import CartPage from './pages/CartPage';
 import { ShopContextProvider } from './features/context/ShopContext';
-import TestNavBar from './features/NavBar/testNavBar';
+import TestNavBar from './features/NavBar/TestNavBar';
 
 function App() {
   return (
