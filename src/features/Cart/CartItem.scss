@@ -1,0 +1,41 @@
+.cartItemImage {
+  height: 300px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.countHandler {
+  align-content: center;
+}
+
+.cartItemButton {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 10px;
+    padding: 5px 15px;
+    color: black;
+    border-radius: 50%;
+}
+
+.cartItemButton:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+  border: 2px solid rgb(19, 19, 19);
+}
+
+.cartItemQuantity {
+  width: 50px;
+  border: none;
+  text-align: center;
+}
