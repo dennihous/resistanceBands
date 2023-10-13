@@ -3,6 +3,7 @@ import bands from '../../../bandsData.json';
 import { ShopContext } from '../context/ShopContext';
 import CartItem from './CartItem';
 import { useNavigate } from "react-router-dom";
+import './Cart.scss';
 
 export default function Cart() {
   const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
@@ -12,7 +13,7 @@ export default function Cart() {
 
   return (
     <div className="cart">
-      <div>
+      <div className='heading'>
         <h1>Your Cart Items</h1>
       </div>
       <div className="cart">
@@ -24,21 +25,23 @@ export default function Cart() {
       </div>
 
       {totalAmount > 0 ? (
-        <div className="checkout">
-          <p> Subtotal: ${totalAmount} </p>
-          <button onClick={() => navigate("/")}> Continue Shopping </button>
+        <div className="checkoutContainer">
+          <div className="subtotal">
+            <p> Subtotal: £{totalAmount.toFixed(2)} </p>
+          </div>
+          <button onClick={() => navigate("/")} className='checkoutButton'> Continue Shopping </button>
           <button
             onClick={() => {
               checkout();
               navigate("/checkout");
             }}
+            className='checkoutButton'
           >
-            {" "}
-            Checkout{" "}
+          Checkout
           </button>
         </div>
       ) : (
-        <h1> Your Shopping Cart is Empty</h1>
+        <h1 className='emptyCart'> Your Shopping Cart is Empty</h1>
       )}
     </div>
   );
