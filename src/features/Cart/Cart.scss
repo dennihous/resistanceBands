@@ -1,0 +1,48 @@
+.heading {
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.checkoutContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subtotal {
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.checkoutButton {
+  background-color: transparent;
+  border: 3px solid rgb(19, 19, 19);
+  font-size: x-large;
+  min-width: 10px;
+  padding: 5px 15px;
+  color: black;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checkoutButton:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+  border: 2px solid rgb(19, 19, 19);
+}
+
+.emptyCart {
+  margin-top: 100px;
+}
